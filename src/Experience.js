@@ -13,12 +13,16 @@ const ExperienceTitle = styled.div`
   letter-spacing: 3px;
   /* writing-mode: vertical-rl; */
 `
+const ExperienceText = styled.p`
+  /* writing-mode: vertical-rl; */
+`
 
 class Experience extends Component {
   render() {
     return (
       <ExperienceWrapper>
         <ExperienceTitle>Experience</ExperienceTitle>
+        <ExperienceText>I have all the Experience</ExperienceText>
       </ExperienceWrapper>
     );
   }
