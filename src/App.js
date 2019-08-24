@@ -1,19 +1,40 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled, { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+`
+
+const AppWrapper = styled.div`
+  text-align: center;
+`
+
+const AppHeader = styled.div`
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+`
+
+const AppIntro = styled.p`
+  font-size: large;
+`
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+      <AppWrapper className="App">
+        <AppHeader className="App-header">
           <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+        </AppHeader>
+        <AppIntro className="App-intro">
+          Hilmar Ragnarsson
+        </AppIntro>
+      </AppWrapper>
     );
   }
 }
