@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
-import Header from './Header';
-import Intro from './Intro';
-import Experience from './Experience';
-import Cv from './Cv';
+import MainPage from './MainPage';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -14,8 +11,6 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const AppWrapper = styled.div`
-  width: 80vw;
-  margin: 0 auto;
 `
 
 class App extends Component {
@@ -23,10 +18,7 @@ class App extends Component {
     return (
       <AppWrapper className="App">
         <GlobalStyle />
-        <Header />
-        <Intro />
-        <Experience />
-        <Cv />
+        <MainPage />
       </AppWrapper>
     );
   }
