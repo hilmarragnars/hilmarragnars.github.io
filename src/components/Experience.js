@@ -5,13 +5,14 @@ import ruLogo from '../../assets/ru-univercity.png';
 import smartvelLogo from '../../assets/smartvel-logo.jpg';
 
 const ExperienceWrapper = styled.div`
-  border-bottom: 1px solid #000;
-  border-right: 1px solid #000;
+  border-bottom: 1px solid #DCDCDC;
+  border-right: 1px solid #DCDCDC;
   display: flex;
   padding: 32px 8px 32px 0;
 `
 
 const VerticalCaption = styled.span`
+  color: gray;
   font-size: 32px;
   text-align: center;
   writing-mode: vertical-rl;

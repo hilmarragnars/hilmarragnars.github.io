@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
 import MainPage from './MainPage';
+import Footer from './components/Footer.js'
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -24,6 +25,7 @@ class App extends Component {
         <AppWrapper className="App">
           <GlobalStyle />
           <MainPage />
+          <Footer />
         </AppWrapper>
       </ThemeProvider>
     );

@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { Container } from 'styled-bootstrap-grid';
 import Education from './components/Education.js'
 import Experience from './components/Experience.js'
-// import Footer from './components/Footer.js'
 import profilePic from '../assets/hilmar-profile-pic.jpeg';
 import pdf from '../assets/myCv.pdf';
 
@@ -21,8 +20,8 @@ const IntroWrapper = styled.div`
   display: flex;
   justify-content: center;
   padding: 0 8px 8px 8px;
-  border-left: 1px solid #000;
-  border-bottom: 1px solid #000;
+  border-left: 1px solid #DCDCDC;
+  border-bottom: 1px solid #DCDCDC;
   @media (max-width: ${props => props.theme.mobile_size}) {
     flex-direction: column;
   }
@@ -44,7 +43,7 @@ const IntroTextWrapper = styled.div`
 const IntroText = styled.div`
 `
 const CvWrapper = styled.div`
-  border-right: 1px solid #000;
+  border-right: 1px solid #DCDCDC;
   padding: 8px;
   text-align: center;
 `
@@ -76,7 +75,6 @@ class MainPage extends Component {
         <CvWrapper>
           <CvLink href={pdf} target="_blank">Curriculum Vitae</CvLink>
         </CvWrapper>
-        {/* <Footer /> */}
       </Container>
     );
   }

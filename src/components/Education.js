@@ -4,8 +4,8 @@ import ruLogo from '../../assets/ru-logo-simple.jpg';
 import carlosLogo from '../../assets/carlos-logo.png';
 
 const EducationWrapper = styled.div`
-  border-bottom: 1px solid #000;
-  border-left: 1px solid #000;
+  border-bottom: 1px solid #DCDCDC;
+  border-left: 1px solid #DCDCDC;
   padding: 32px 8px 32px 0;
   display: flex;
   justify-content: space-between;
@@ -15,6 +15,7 @@ const Univercity = styled.div`
   flex-basis: 47%;
 `
 const EduCaption = styled.span`
+  color: gray;
   font-size: 32px;
   text-align: center;
   writing-mode: vertical-rl;
