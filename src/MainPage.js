@@ -3,11 +3,8 @@ import styled from 'styled-components';
 import { Container } from 'styled-bootstrap-grid';
 import Education from './components/Education.js'
 import Experience from './components/Experience.js'
-import Footer from './components/Footer.js'
+// import Footer from './components/Footer.js'
 import profilePic from '../assets/hilmar-profile-pic.jpeg';
-import broadsheetLogo from '../assets/broadsheet-logo.svg';
-import ruLogo from '../assets/ru-univercity.png';
-import smartvelLogo from '../assets/smartvel-logo.jpg';
 import pdf from '../assets/myCv.pdf';
 
 
