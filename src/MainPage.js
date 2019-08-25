@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import profilePic from '../assets/hilmar-profile-pic.jpeg';
+import broadsheetLogo from '../assets/broadsheet-logo.svg';
+import ruLogo from '../assets/ru-univercity.png';
+import smartvelLogo from '../assets/smartvel-logo.jpg';
 import pdf from '../assets/myCv.pdf';
-import { Container, Row, Col } from 'styled-bootstrap-grid';
+import { Container } from 'styled-bootstrap-grid';
 
-const PageWrapper = styled.div`
-`
+
 const HeaderWrapper = styled.div`
   text-align: center;
 `
@@ -21,15 +23,16 @@ const IntroWrapper = styled.div`
   padding: 0 8px 8px 8px;
   border-left: 1px solid #000;
   border-bottom: 1px solid #000;
-  @media (max-width: 414px) {
+  @media (max-width: ${props => props.theme.mobile_size}) {
     flex-direction: column;
   }
 `
 const IntroPicWrapper = styled.div`
   height: 300px;
-  @media (max-width: 414px) {
+  @media (max-width: ${props => props.theme.mobile_size}) {
     margin-bottom: 16px;
     text-align: center;
+    background-color: #F5E1C8;
   }
 `
 const IntroPic = styled.img`
@@ -43,17 +46,26 @@ const IntroText = styled.div`
 const ExperienceWrapper = styled.div`
   border-bottom: 1px solid #000;
   border-right: 1px solid #000;
-  padding: 8px;
-  text-align: center;
+  padding: 8px 8px 8px 0;
+  display: flex;
 `
 
-const ExperienceTitle = styled.div`
+const ExperienceTitle = styled.span`
   font-size: 32px;
-  letter-spacing: 3px;
-  /* writing-mode: vertical-rl; */
+  text-align: center;
+  writing-mode: vertical-rl;
 `
-const ExperienceText = styled.p`
-  /* writing-mode: vertical-rl; */
+const ExperienceText = styled.div`
+  margin: 16px 0 16px 32px;
+`
+const Company = styled.div`
+`
+const CompanyTitle = styled.h3`
+  margin: 8px 0 32px 64px;
+`
+const CompanyImage = styled.img`
+  height ${props => props.size};
+
 `
 const CvWrapper = styled.div`
   border-bottom: 1px solid #000;
@@ -86,7 +98,20 @@ class MainPage extends Component {
         </IntroWrapper>
         <ExperienceWrapper>
           <ExperienceTitle>Experience</ExperienceTitle>
-          <ExperienceText>All kinds of experience!</ExperienceText>
+          <ExperienceText>
+            <Company>
+              <CompanyImage size={'20px'} src={broadsheetLogo}/>
+              {/* <CompanyTitle> Python and Django Full Stack Web Developer </CompanyTitle> */}
+            </Company>
+            <Company>
+              <CompanyImage size={'80px'} src={smartvelLogo}/>
+              {/* <CompanyTitle> Python Developer </CompanyTitle> */}
+            </Company>
+            <Company>
+              <CompanyImage size={'55px'} src={ruLogo}/>
+              {/* <CompanyTitle> Teaching Assistant </CompanyTitle> */}
+            </Company>
+          </ExperienceText>
         </ExperienceWrapper>
         <CvWrapper>
           <CvLink href={pdf} target="_blank">Curriculum Vitae</CvLink>

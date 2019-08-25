@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
 import MainPage from './MainPage';
 
 const GlobalStyle = createGlobalStyle`
@@ -10,16 +10,22 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
+const theme = {
+  mobile_size: "600px"
+};
+
 const AppWrapper = styled.div`
 `
 
 class App extends Component {
   render() {
     return (
-      <AppWrapper className="App">
-        <GlobalStyle />
-        <MainPage />
-      </AppWrapper>
+      <ThemeProvider theme={theme}>
+        <AppWrapper className="App">
+          <GlobalStyle />
+          <MainPage />
+        </AppWrapper>
+      </ThemeProvider>
     );
   }
 }
