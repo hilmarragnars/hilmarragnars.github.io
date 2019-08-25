@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
 import { Container } from 'styled-bootstrap-grid';
 import CvFile from './components/CvFile.js';
 import Education from './components/Education.js';

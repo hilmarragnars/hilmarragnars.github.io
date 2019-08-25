@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import profilePic from '../../assets/hilmar-profile-pic.jpeg';
 
 const HeaderWrapper = styled.div`
   text-align: center;
