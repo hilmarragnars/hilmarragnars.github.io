@@ -7,6 +7,10 @@ import {LinkedinSquare} from 'styled-icons/boxicons-logos/LinkedinSquare'
 
 const FooterWrapper = styled.div`
   background-color: #DCDCDC;
+  width: 100vw;
+  @media (max-width: ${props => props.theme.mobile_size}) {
+    width: 120vw;
+  }
 `
 const InfoWrapper = styled.div`
   display: flex;

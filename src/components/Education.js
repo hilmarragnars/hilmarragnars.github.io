@@ -9,6 +9,9 @@ const EducationWrapper = styled.div`
   padding: 32px 8px 32px 0;
   display: flex;
   justify-content: space-between;
+  @media (max-width: ${props => props.theme.mobile_size}) {
+    flex-direction: column-reverse;
+  }
 `
 const Univercity = styled.div`
   text-align: center;
@@ -20,6 +23,10 @@ const EduCaption = styled.span`
   text-align: center;
   writing-mode: vertical-rl;
   flex-basis: 6%;
+  @media (max-width: ${props => props.theme.mobile_size}) {
+    writing-mode: horizontal-tb;
+    margin-bottom: 32px;
+  }
 `
 const UniLogo = styled.img`
   height: ${props => props.size}
@@ -33,9 +40,7 @@ const UniTitle = styled.h3`
     font-size: 0.8em;
   }
 `
-const UniDesc = styled.p`
-
-`
+const UniDesc = styled.p``
 
 const Education = function(props) {
   return (

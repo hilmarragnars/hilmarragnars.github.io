@@ -9,6 +9,10 @@ const ExperienceWrapper = styled.div`
   border-right: 1px solid #DCDCDC;
   display: flex;
   padding: 64px 8px 56px 0;
+  @media (max-width: ${props => props.theme.mobile_size}) {
+    flex-direction: column;
+    padding: 32px 8px 32px 8px;
+  }
 `
 
 const VerticalCaption = styled.span`
@@ -16,10 +20,17 @@ const VerticalCaption = styled.span`
   font-size: 32px;
   text-align: center;
   writing-mode: vertical-rl;
+  @media (max-width: ${props => props.theme.mobile_size}) {
+    writing-mode: horizontal-tb;
+    margin-bottom: 32px;
+  }
 `
 const ExperienceText = styled.div`
   margin-left: 48px;
   flex-grow: 1;
+  @media (max-width: ${props => props.theme.mobile_size}) {
+    margin-left: 0;
+  }
 `
 const Company = styled.div`
   margin-bottom: ${props => props.marginBottom};
