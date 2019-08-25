@@ -1,25 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
-
+import profilePic from '../../assets/hilmar-profile-pic.jpeg';
 
 const HeaderWrapper = styled.div`
   text-align: center;
 `
-
 const HeaderTitle = styled.div`
   font-size: 45px;
   margin: 40px 0;
 `
 
-
-class Header extends Component {
-  render() {
-    return (
-      <HeaderWrapper>
-        <HeaderTitle>Hilmar Ragnarsson</HeaderTitle>
-      </HeaderWrapper>
-    );
-  }
-}
+const Header = function(props) {
+  return (
+    <HeaderWrapper>
+      <HeaderTitle>Hilmar Ragnarsson</HeaderTitle>
+    </HeaderWrapper>
+  );
+};
 
 export default Header;

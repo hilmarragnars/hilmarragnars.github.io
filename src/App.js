@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled, { createGlobalStyle, ThemeProvider } from 'styled-components';
 import MainPage from './MainPage';
 import Footer from './components/Footer.js'
+import Header from './components/Header.js'
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -12,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const theme = {
-  mobile_size: "600px"
+  mobile_size: "600px",
 };
 
 const AppWrapper = styled.div`
@@ -24,6 +25,7 @@ class App extends Component {
       <ThemeProvider theme={theme}>
         <AppWrapper className="App">
           <GlobalStyle />
+          <Header />
           <MainPage />
           <Footer />
         </AppWrapper>

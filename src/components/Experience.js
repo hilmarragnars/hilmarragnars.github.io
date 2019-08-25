@@ -8,7 +8,7 @@ const ExperienceWrapper = styled.div`
   border-bottom: 1px solid #DCDCDC;
   border-right: 1px solid #DCDCDC;
   display: flex;
-  padding: 32px 8px 32px 0;
+  padding: 64px 8px 56px 0;
 `
 
 const VerticalCaption = styled.span`
@@ -44,7 +44,7 @@ const Experience = function(props) {
     <ExperienceWrapper>
       <VerticalCaption pos={'left'}>Experience</VerticalCaption>
       <ExperienceText>
-        <Company marginBottom={'16px'}>
+        <Company marginBottom={'48px'}>
           <CompanyImage size={'30px'} src={broadsheetLogo}/>
           <CompanyTitle marginTop={'16px'}> Python and Django Full Stack Web Developer <span>2017-2019</span></CompanyTitle>
           <ExperienceListWrapper>
@@ -56,7 +56,7 @@ const Experience = function(props) {
             </ul>
           </ExperienceListWrapper>
         </Company>
-        <Company marginBottom={'32px'}>
+        <Company marginBottom={'64px'}>
           <CompanyImage size={'100px'} src={smartvelLogo}/>
           <CompanyTitle marginTop={'0'}> Python Developer <span>2016-2017</span></CompanyTitle>
           <ExperienceListWrapper>
