@@ -56,7 +56,7 @@ const Experience = function(props) {
       <VerticalCaption pos={'left'}>Experience</VerticalCaption>
       <ExperienceText>
         <Company marginBottom={'48px'}>
-          <CompanyImage size={'30px'} src={broadsheetLogo}/>
+          <a href='https://www.broadsheet.com.au/' target='_balnk'><CompanyImage size={'30px'} src={broadsheetLogo}/></a>
           <CompanyTitle marginTop={'16px'}> Python and Django Full Stack Web Developer <span>2017-2019</span></CompanyTitle>
           <ExperienceListWrapper>
             <ul>
@@ -68,7 +68,7 @@ const Experience = function(props) {
           </ExperienceListWrapper>
         </Company>
         <Company marginBottom={'64px'}>
-          <CompanyImage size={'100px'} src={smartvelLogo}/>
+          <a href='https://www.smartvel.com/' target='_balnk'><CompanyImage size={'100px'} src={smartvelLogo}/></a>
           <CompanyTitle marginTop={'0'}> Python Developer <span>2016-2017</span></CompanyTitle>
           <ExperienceListWrapper>
             <ul>
@@ -79,7 +79,7 @@ const Experience = function(props) {
           </ExperienceListWrapper>
         </Company>
         <Company marginBottom={'0'}>
-          <CompanyImage size={'55px'} src={ruLogo}/>
+          <a href='https://en.ru.is/' target='_balnk'><CompanyImage size={'55px'} src={ruLogo}/></a>
           <CompanyTitle marginTop={'16px'}> Teaching Assistant <span>2014-2015</span></CompanyTitle>
           <ExperienceListWrapper>
             <ul>
