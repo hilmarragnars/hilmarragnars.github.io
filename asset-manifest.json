@@ -1,6 +1,10 @@
 {
-  "main.js": "static/js/main.546406e5.js",
-  "main.js.map": "static/js/main.546406e5.js.map",
+  "main.js": "static/js/main.447aa8b2.js",
+  "main.js.map": "static/js/main.447aa8b2.js.map",
+  "static/media/broadsheet-logo.svg": "static/media/broadsheet-logo.b4dce78c.svg",
+  "static/media/carlos-logo.png": "static/media/carlos-logo.5d8f266d.png",
   "static/media/hilmar-profile-pic.jpeg": "static/media/hilmar-profile-pic.ccd51768.jpeg",
-  "static/media/myCv.pdf": "static/media/myCv.ca9fa67f.pdf"
+  "static/media/myCv.pdf": "static/media/myCv.ca9fa67f.pdf",
+  "static/media/ru-logo-simple.jpg": "static/media/ru-logo-simple.2e200b0a.jpg",
+  "static/media/smartvel-logo.jpg": "static/media/smartvel-logo.faf629b7.jpg"
 }
