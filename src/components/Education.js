@@ -4,9 +4,9 @@ import ruLogo from '../../assets/ru-logo-simple.jpg';
 import carlosLogo from '../../assets/carlos-logo.png';
 
 const EducationWrapper = styled.div`
-  border-bottom: 1px solid #DCDCDC;
-  border-left: 1px solid #DCDCDC;
-  padding: 32px 8px 32px 0;
+  border-bottom: 1px solid ${props => props.theme.gray_light};
+  border-left: 1px solid ${props => props.theme.gray_light};
+  padding: 80px 8px 80px 0;
   display: flex;
   justify-content: space-between;
   @media (max-width: ${props => props.theme.mobile_size}) {
@@ -56,7 +56,7 @@ const Education = function(props) {
         <UniLogo size={'40px'} src={carlosLogo}/>
         <UniInfo>
           <UniTitle>Univercity Carlos III of Madrid<br/><span>2015-2016</span></UniTitle>
-          <UniDesc>Finished the last year of my bachelor in Madrid as an exchange student</UniDesc>
+          <UniDesc>Exchange student in Madrid for one year</UniDesc>
         </UniInfo>
       </Univercity>
       <EduCaption>Education</EduCaption>

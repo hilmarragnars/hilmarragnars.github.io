@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import pdf from '../../assets/myCv.pdf';
 
 const CvWrapper = styled.div`
-  border-right: 1px solid #DCDCDC;
-  padding: 32px;
+  border-right: 1px solid ${props => props.theme.gray_light};
+  padding: 56px;
   text-align: center;
 `
 const CvText = styled.h3`

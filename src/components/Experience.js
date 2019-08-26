@@ -5,8 +5,8 @@ import ruLogo from '../../assets/ru-univercity.png';
 import smartvelLogo from '../../assets/smartvel-logo.jpg';
 
 const ExperienceWrapper = styled.div`
-  border-bottom: 1px solid #DCDCDC;
-  border-right: 1px solid #DCDCDC;
+  border-bottom: 1px solid ${props => props.theme.gray_light};
+  border-right: 1px solid ${props => props.theme.gray_light};
   display: flex;
   padding: 64px 8px 56px 0;
   @media (max-width: ${props => props.theme.mobile_size}) {

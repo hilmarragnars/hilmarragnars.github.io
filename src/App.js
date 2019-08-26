@@ -14,6 +14,7 @@ const GlobalStyle = createGlobalStyle`
 
 const theme = {
   mobile_size: "600px",
+  gray_light: "#DCDCDC"
 };
 
 const AppWrapper = styled.div`

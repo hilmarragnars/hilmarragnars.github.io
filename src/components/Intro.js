@@ -6,9 +6,9 @@ const IntroWrapper = styled.div`
   margin: auto;
   display: flex;
   justify-content: center;
-  padding: 0 8px 8px 8px;
-  border-left: 1px solid #DCDCDC;
-  border-bottom: 1px solid #DCDCDC;
+  padding: 0 32px 32px 32px;
+  border-left: 1px solid ${props => props.theme.gray_light};
+  border-bottom: 1px solid ${props => props.theme.gray_light};
   @media (max-width: ${props => props.theme.mobile_size}) {
     flex-direction: column;
   }
@@ -25,7 +25,7 @@ const IntroPic = styled.img`
   height: 100%;
 `
 const IntroTextWrapper = styled.div`
-  padding-left: 8px;
+  padding-left: 32px;
 `
 const IntroText = styled.div`
 `
