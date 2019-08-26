@@ -13,7 +13,8 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const theme = {
-  mobile_size: "600px",
+  mobile_size: "768px",
+  tablet_small: "992px",
   gray_light: "#DCDCDC"
 };
 

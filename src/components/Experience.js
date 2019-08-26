@@ -22,7 +22,7 @@ const VerticalCaption = styled.span`
   writing-mode: vertical-rl;
   @media (max-width: ${props => props.theme.mobile_size}) {
     writing-mode: horizontal-tb;
-    margin-bottom: 32px;
+    margin-bottom: 48px;
   }
 `
 const ExperienceText = styled.div`
