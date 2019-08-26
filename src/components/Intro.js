@@ -28,6 +28,9 @@ const IntroTextWrapper = styled.div`
   padding-left: 32px;
 `
 const IntroText = styled.div`
+  p:first-child {
+    margin-top: 0;
+  }
 `
 
 const Intro = function(props) {
@@ -37,7 +40,11 @@ const Intro = function(props) {
         <IntroPic src={profilePic} alt="me" />
       </IntroPicWrapper>
       <IntroTextWrapper>
-        <IntroText>I am the best programmer in my moms world. And I am also the best programmer in my grandmothers world. I don't think my dog knows I am a programmer but if she knew I would also be the best programmer in her world.</IntroText>
+        <IntroText>
+          <p>I am a Software Developer from Iceland, currently living in sunny Barcelona. I moved to Madrid in the fall of 2015 where I finished my degree in Software Engineering and started my career. I lived in Madrid for little more than 2 years before I moved to Barcelona.</p>
+          <p>I have been working remotely for the last 2 years and it has been a very good and valuable experience. Now I am eager to return to the office and join a fun and hard working team and work on a product that I genuinely believe in.</p>
+          <p>"I am the best programmer in my moms world. And I am also the best programmer in my grandmothers world. I don't think my dog knows I am a programmer but if she knew I would also be the best programmer in her world." - me</p>
+        </IntroText>
       </IntroTextWrapper>
     </IntroWrapper>
   );
