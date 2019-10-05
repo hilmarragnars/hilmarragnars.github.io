@@ -31,9 +31,12 @@ const IntroText = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: space-between;
+  justify-content: flex-start;
 `
-const IntroParagraph = styled.div`
+const IntroParagraph = styled.p`
+  :first-child{
+    margin-top: 0;
+  }
   @media (max-width: ${props => props.theme.tablet_small}) {
     margin-bottom: 16px;
   }
