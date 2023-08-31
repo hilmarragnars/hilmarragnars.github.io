@@ -73,6 +73,7 @@ const Experience = function(props) {
           <ExperienceListWrapper>
             <ul>
               <li>Contributed to the development of their web scraping engine written in Python.</li>
+              <li>Tougth them how to speak with whales.</li>
               <li>Worked mainly in Django, filtering and sorting data.</li>
               <li>Was in charge of developing tests for the frontend.</li>
             </ul>
